@@ -36,7 +36,7 @@ To run this project:
 * Insert your TMDB API Key into file env.local;
 * Save;
 * Open CLI (Terminal);
-* Navigate in the directory with command 'cd start2track-master';
+* Navigate in the directory with command 'cd start2track-main';
 * Type and send command 'npm i' (only if you don't have);
 * Type and send command 'npm start'.
 
