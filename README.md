@@ -24,7 +24,6 @@ Project is created with:
 * Google Fonts
 * Font Awesome
 * JavaScript ES6
-* JSON
 * React
 * API
 * localStorage
