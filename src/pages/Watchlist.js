@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
-import { MovieCard } from "./MovieCard";
+import { MovieCard } from "../components/MovieCard";
 
 export const Watchlist = () => {
   const { watchlist } = useContext(GlobalContext);
@@ -22,9 +22,8 @@ export const Watchlist = () => {
               <MovieCard movie={movie} key={movie.id} type="watchlist" />
             ))}
           </div>
-        ) : (
-          <h2 className="no-movies">Do you don't desire watch any movies?</h2>
-        )}
+        ) : <h2 className="no-movies">Do you don't desire watch any movies?</h2>
+        }
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
-import { MovieCard } from "./MovieCard";
+import { MovieCard } from "../components/MovieCard";
 
 export const Watched = () => {
 	const { watched } = useContext(GlobalContext);
@@ -21,9 +21,7 @@ export const Watched = () => {
 							<MovieCard movie={movie} key={movie.id} type="watched" />
 						))}
 					</div>
-				) : (
-					<h2 className="no-movies">Do you never watched a movie?</h2>
-				)}
+				) : <h1 className="no-movies">Do you never watched a movie?</h1>}
 			</div>
 		</div>
 	);
